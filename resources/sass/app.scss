@@ -1,0 +1,33 @@
+:root {
+    --primary: #222f3e;
+    --secondary: #576574;
+    --bg: #c8d6e5;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--primary);
+    font-size: 96px;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--secondary);
+    font-size: 72px;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
+p {
+    color: var(--secondary);
+    font-size: 48px;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
