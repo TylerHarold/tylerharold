@@ -16,5 +16,6 @@ use App\Http\Controllers\Controller;
 */
 
 Route::prefix('/')->group(function() {
-    Route::get('/', 'Controller@index');
+    Route::get('/', 'Controller@index')->name('index');
+    Route::get('/contact', 'Controller@contact')->name('contact');
 });
