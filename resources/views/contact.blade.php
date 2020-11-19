@@ -3,10 +3,10 @@
 @section("body")
     <div class="col-12">
         <h1>Email</h1>
-        <p>tyler@programmer.net</p>
+        <a href="mailto:tyler@programmer.net">tyler@programmer.net</a>
     </div>
     <div class="col-12">
         <h1>Discord</h1>
-        <p>script#0001</p>
+        <a href="https://discord.com">script#0001</a>
     </div>
 @endsection

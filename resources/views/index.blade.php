@@ -14,6 +14,7 @@
             @endif
             <h2>{{ $job->company_timeframe }}</h2>
             <p>{{ $job->company_description }}</p>
+            <br>
         </div>
     @endforeach
 @endsection
