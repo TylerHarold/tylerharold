@@ -12,8 +12,15 @@
 
 <body>
 @include("components.header")
-
-@yield("body")
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-12">
+            <div class="row">
+                @yield("body")
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 
