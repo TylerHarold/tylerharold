@@ -1,44 +1,90 @@
 :root {
-    --primary: #222f3e;
-    --secondary: #576574;
-    --bg: #c8d6e5;
+    --white: #e0f0ea;
+    --pink: #CF6DA7;
+    --blue: #3B62A1;
 }
 
 body {
-    background: var(--bg);
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    word-break: break-word;
+    background: linear-gradient(270deg, var(--pink), var(--blue));
+    background-size: 400% 400%;
+
+    -webkit-animation: gradient-bg 30s ease infinite;
+    -moz-animation: gradient-bg 30s ease infinite;
+    animation: gradient-bg 30s ease infinite;
 }
 
-h1 {
-    color: var(--primary);
-    font-size: 64px;
-    margin: 10px 0px;
-    font-weight: 700;
+h1, h2, h3 {
+    color: var(--white);
+    font-weight: 500;
 }
 
-h2 {
-    color: var(--secondary);
-    font-size: 36px;
-    margin: 10px 0px;
-    font-weight: 700;
+h4, h5, h6 {
+    color: var(--white);
+    font-weight: 300;
 }
 
-
-p {
-    color: var(--secondary);
-    font-size: 28px;
-    margin: 10px 0px;
-    font-weight: 700;
+.div {
+    height: 25px;
 }
 
 a {
-    color: var(--primary);
-    font-size: 24px;
-}
-
-a:hover {
+    background: linear-gradient(to right, #7ACDF7, #9063AB);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    -webkit-background-clip:text;
+    color: var(--white);
+    text-align:center;
+    transition: color .2s ease-in-out;
     text-decoration: none;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0);
+        text-decoration: none;
+    }
 }
 
+.social-button {
+    padding: 20px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.logo {
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes gradient-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
+
+@keyframes rainbow {
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+}
