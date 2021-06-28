@@ -1,4 +1,4 @@
 # Tyler Harold
-DevOps Engineer @MCProHosting. I enjoy working w/ PHP & C#, but open to contributing to Python & JS projects.
+DevOps Engineer @MCProHosting.
 
 Contact: tyler@programmer.net
